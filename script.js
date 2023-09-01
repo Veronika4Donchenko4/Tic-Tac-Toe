@@ -86,3 +86,10 @@ function mark(event) {
 function reset() {
     window.location.reload();
 }
+
+
+const score = () => {
+    console.log(winPatterns)
+}
+
+score()
