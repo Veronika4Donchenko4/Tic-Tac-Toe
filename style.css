@@ -1,5 +1,5 @@
 :root {
-    --border: 2px solid hsl(0 0% 60%)
+    --border: 2px solid hsl(0 0% 60%);
 }
 body {
     margin: 0px;
@@ -9,6 +9,33 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+h1 {
+    font-size: 3rem;
+}
+#score-board {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#score-board-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#score-section {
+    display: flex;
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+}
+.score-player {
+    font-size: 1.5rem;
+}
+.score-points {
+    font-size: 1.25rem;
 }
 .game-ui {
     max-width: 300px;
@@ -38,10 +65,31 @@ main {
 #cell-8 {
     border-right: var(--border);
 }
+.win {
+    color: goldenrod;
+    font-weight: 700;
+}
+#message {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+#restart {
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 #reset {
     border: none;
     padding: 16px 32px;
     border-radius: 8px;
     margin-top: 40px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    background-color: crimson;
+    color: white;
 }
